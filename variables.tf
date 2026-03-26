@@ -286,7 +286,6 @@ variable "master_password_wo" {
   description = "Write-Only required unless `manage_master_user_password` is set to `true`, a `snapshot_identifier`, `replication_source_identifier`, or unless a `global_cluster_identifier` is provided when the cluster is the \"secondary\" cluster of a global database) Password for the master DB user"
   type        = string
   sensitive   = true
-  ephemeral   = true
   default     = null
 }
 
